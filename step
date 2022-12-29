@@ -1,0 +1,8 @@
+To convert existing working model to tfjs model :-
+//After trainining and testing your model
+//Note: model is <model name>
+1) model.save("model.h5")
+2) !pip install tensorflowjs
+3) !tensorflowjs_converter --input_format keras '/content/model.h5' '/content/model'
+
+After doing this a content folder will be created, and model.json will be generated.
